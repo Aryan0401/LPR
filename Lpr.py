@@ -1,9 +1,11 @@
 
 from skimage.io import imread
 from skimage.filters import threshold_otsu
-import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use("QtAgg")
 
-car_image = imread("car.jpeg", as_gray=True)
+import matplotlib.pyplot as plt
+car_image = imread("car.jpg", as_gray=True)
 # it should be a 2 dimensional array
 print(car_image.shape)
 
